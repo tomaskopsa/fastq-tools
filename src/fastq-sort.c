@@ -544,6 +544,7 @@ int main(int argc, char* argv[])
                 break;
 
             case '?':
+            	print_help();
                 return 1;
 
             default:
