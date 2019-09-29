@@ -551,6 +551,12 @@ int main(int argc, char* argv[])
         }
     }
 
+	if (argv[optind] == NULL || argv[optind + 1] == NULL) {
+		printf("Mandatory argument(s) missing\n");
+		print_help();
+		exit(1);
+	}
+
     cmp = reverse_sort ? rev_cmp : user_cmp;
 
     seq_array_t* a = seq_array_create(buffer_size);
