@@ -552,7 +552,7 @@ int main(int argc, char* argv[])
         }
     }
 
-	if (argv[optind] == NULL || argv[optind + 1] == NULL) {
+	if (argv[optind] == NULL) {
 		printf("Mandatory argument(s) missing\n");
 		print_help();
 		exit(1);
